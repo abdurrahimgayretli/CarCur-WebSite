@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tebrikler</title>
+    <link rel="stylesheet" href="css/indexstyle.css" />
+    <link rel="stylesheet" href="css/sepet.css" />
+  </head>
+
+  <body>
+    <section id="menu">
+      <div class="anamenu">
+        <div id="logo">
+          <a style="cursor: pointer" onclick="getIndex('index');">ÇarÇur</a>
+        </div>
+        <br />
+        <div class="nav" style="cursor: default">
+          <a style="cursor: pointer" onclick="getCategory('Beyaz Esya');"
+            >Beyaz Eşya</a
+          >
+          &emsp;
+          <a style="cursor: pointer" onclick="getCategory('Bilgisayar Tablet');"
+            >Bilgisayar-Tablet</a
+          >
+          &emsp;
+          <a style="cursor: pointer" onclick="getCategory('Telefon');"
+            >Telefon</a
+          >
+          &emsp;
+          <a
+            style="cursor: pointer"
+            onclick="getCategory('Elektrikli Ev Aletleri');"
+            >Elektrikli Ev Aletleri</a
+          >
+          &emsp; &emsp;
+          <a style="cursor: pointer" onclick="getCategory('galeri');">Galeri</a>
+        </div>
+      </div>
+      <a style="cursor: pointer" onclick="getIndex('cart')" class="sepet">
+        <h1>Sepet</h1>
+      </a>
+      <a style="cursor: pointer" class="cikisyap" id="logout" href="index.html">
+        <h1>Çıkış Yap</h1>
+      </a>
+      <div class="hesap" id="account"></div>
+    </section>
+
+    <div class="hosgeldiniz">
+      <div class="yazi">
+        <h1 style="color: white">Tebrikler</h1>
+      </div>
+    </div>
+
+    <div class="all">
+      <div class="aciklamakutusu">
+        <div class="son1">
+          <p class="tik">&#x2611;</p>
+
+          <div class="end">
+            <p>Sipariş No: 123456</p>
+
+            <h3 id="isim">Teşekkürler,</h3>
+          </div>
+        </div>
+        <div class="cizgi0"></div>
+
+        <div class="yazi0">
+          Siparişiniz Onaylandı. <br />
+          <br />
+          Siparişinizi kabul ettik ve hazırlıyoruz.
+        </div>
+        <div class="cizgi1"></div>
+      </div>
+
+      <div class="sepetkutusu">
+        <div class="ckutu">
+          <h3>Sepetteki Ürün Bilgisi</h3>
+          <br />
+
+          <p id="price">Toplam Tutar:</p>
+          <p>Kargo Ücreti: Ücretsiz</p>
+
+          <div class="cizgi2"></div>
+          <br />
+
+          <p id="subTotal">Toplam Fiyat:</p>
+        </div>
+      </div>
+    </div>
+
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+    <div class="sayfasonu">
+      <div class="butun">
+        <div class="ilk">
+          <h2 style="color: rgb(42, 132, 173)"><span>ÇarÇur</span></h2>
+          <br />
+          <p style="color: rgb(155, 155, 155)">
+            İnternette güvenli alışverişin adresi carcur.com'a <br />aşağıdaki
+            iletişim adreslerinden kolYılca ulaşabilirsiniz.
+          </p>
+        </div>
+
+        <div class="orta">
+          <h2 style="color: white">Kategoriler</h2>
+          <br /><br />
+          <a
+            onclick="getCategory('Beyaz Esya');"
+            style="color: rgb(155, 155, 155); cursor: pointer"
+            >BEYAZ EŞYA</a
+          >
+          <br />
+          <p style="color: rgb(155, 155, 155)">
+            -----------------------------------------------------------------
+            <br />
+            <a
+              onclick="getCategory('BilgisYılar Tablet');"
+              style="color: rgb(155, 155, 155); cursor: pointer"
+              >BİLGİSYılAR-TABLET</a
+            >
+            <br />
+          </p>
+
+          <p style="color: rgb(155, 155, 155)">
+            -----------------------------------------------------------------
+            <br />
+            <a
+              onclick="getCategory('Telefon');"
+              style="color: rgb(155, 155, 155); cursor: pointer"
+              >TELEFON</a
+            >
+            <br />
+          </p>
+
+          <p style="color: rgb(155, 155, 155)">
+            -----------------------------------------------------------------
+            <br />
+            <a
+              onclick="getCategory('Elektrikli Ev Aletleri');"
+              style="color: rgb(155, 155, 155); cursor: pointer"
+              >ELEKTRİKLİ EV ALETLERİ</a
+            >
+            <br />
+          </p>
+
+          <p style="color: rgb(155, 155, 155)">
+            -----------------------------------------------------------------
+          </p>
+        </div>
+
+        <div class="son">
+          <p style="color: rgb(155, 155, 155)">
+            "Müşteri Hizmetleri" servisimiz 7 gün, 24 saat gönderderdiğiniz
+            sorulara en hızlı şekilde yanıt verir.
+          </p>
+          <br />
+          <br />
+          <br />
+          <button class="iletisim" id="modal-ac">İletisim Bilgileri</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal">
+      <form>
+        <h3 id="modal-kapat">x</h3>
+        <img src="./img/iletisim.jpg" alt="" />
+        <a href="https://www.instagram.com/carcurshopping/?igshid=YmMyMTA2M2Y="
+          >İnstagram Sayfamız</a
+        >
+        <a href="https://www.facebook.com/profile.php?id=100081168500954"
+          >FaceBook Sayfamız</a
+        >
+      </form>
+    </div>
+  </body>
+  <script src="js/end.js"></script>
+  <script src="js/index.js"></script>
+</html>

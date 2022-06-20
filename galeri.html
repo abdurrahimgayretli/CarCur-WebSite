@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeri</title>
+    <link rel="stylesheet" href="css/indexstyle.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <section id="menu">
+      <div class="anamenu">
+        <div id="logo">
+          <a style="cursor: pointer" onclick="getIndex('index');">ÇarÇur</a>
+        </div>
+        <br />
+        <div class="nav" style="cursor: default">
+          <a style="cursor: pointer" onclick="getCategory('Beyaz Esya');"
+            >Beyaz Eşya</a
+          >
+          &emsp;
+          <a style="cursor: pointer" onclick="getCategory('Bilgisayar Tablet');"
+            >Bilgisayar-Tablet</a
+          >
+          &emsp;
+          <a style="cursor: pointer" onclick="getCategory('Telefon');"
+            >Telefon</a
+          >
+          &emsp;
+          <a
+            style="cursor: pointer"
+            onclick="getCategory('Elektrikli Ev Aletleri');"
+            >Elektrikli Ev Aletleri</a
+          >
+          &emsp; &emsp;
+          <a style="cursor: pointer" onclick="getCategory('galeri');">Galeri</a>
+        </div>
+      </div>
+      <a style="cursor: pointer" onclick="getIndex('cart')" class="sepet">
+        <h1>Sepet</h1>
+      </a>
+      <a style="cursor: pointer" class="cikisyap" id="logout" href="index.html">
+        <h1>Çıkış Yap</h1>
+      </a>
+      <div class="hesap" id="account"></div>
+    </section>
+
+    <div class="hosgeldiniz">
+      <div class="yazi">
+        <h1 style="color: white">Galeri</h1>
+      </div>
+    </div>
+
+    <div class="fullimg" id="fullImgBox">
+      <div class="back">
+        <button class="btn1" onclick="plusIndex(-1)" id="btn1">&#10094;</button>
+
+        <img
+          class="slides"
+          src="img/siteimg/1.png"
+          onclick="openFullImg(this.src)"
+          id="fullimg0"
+        />
+        <img
+          class="slides"
+          src="img/siteimg/2.png"
+          onclick="openFullImg(this.src)"
+          id="fullimg0"
+        />
+        <img
+          class="slides"
+          src="img/siteimg/3.png"
+          onclick="openFullImg(this.src)"
+          id="fullimg0"
+        />
+        <img
+          class="slides"
+          src="img/siteimg/4.png"
+          onclick="openFullImg(this.src)"
+          id="fullimg0"
+        />
+        <img
+          class="slides"
+          src="img/siteimg/5.png"
+          onclick="openFullImg(this.src)"
+          id="fullimg0"
+        />
+        <img
+          class="slides"
+          src="img/siteimg/6.png"
+          onclick="openFullImg(this.src)"
+          id="fullimg0"
+        />
+        <img
+          class="slides"
+          src="img/siteimg/7.png"
+          onclick="openFullImg(this.src)"
+          id="fullimg0"
+        />
+        <img
+          class="slides"
+          src="img/siteimg/8.png"
+          onclick="openFullImg(this.src)"
+          id="fullimg0"
+        />
+        <img
+          class="slides"
+          src="img/siteimg/9.png"
+          onclick="openFullImg(this.src)"
+          id="fullimg0"
+        />
+        <img
+          class="slides"
+          src="img/siteimg/10.png"
+          onclick="openFullImg(this.src)"
+          id="fullimg0"
+        />
+
+        <span onclick="closeFullImg()" accesskey="h">X</span>
+
+        <button class="btn" onclick="plusIndex(1)" id="btn2">&#10095;</button>
+      </div>
+    </div>
+
+    <div class="galeri">
+      <img src="img/siteimg/1.png" onclick="openFullImg(this.src)" />
+      <img src="img/siteimg/2.png" onclick="openFullImg(this.src)" />
+      <img src="img/siteimg/3.png" onclick="openFullImg(this.src)" />
+      <img src="img/siteimg/4.png" onclick="openFullImg(this.src)" />
+      <img src="img/siteimg/5.png" onclick="openFullImg(this.src)" />
+      <img src="img/siteimg/6.png" onclick="openFullImg(this.src)" />
+      <img src="img/siteimg/7.png" onclick="openFullImg(this.src)" />
+      <img src="img/siteimg/8.png" onclick="openFullImg(this.src)" />
+      <img src="img/siteimg/9.png" onclick="openFullImg(this.src)" />
+      <img src="img/siteimg/10.png" onclick="openFullImg(this.src)" />
+    </div>
+
+    <br /><br /><br /><br /><br /><br /><br /><br />
+
+    <div class="sayfasonu">
+      <div class="butun">
+        <div class="ilk">
+          <h2 style="color: rgb(42, 132, 173)"><span>ÇarÇur</span></h2>
+          <br />
+          <p style="color: rgb(155, 155, 155)">
+            İnternette güvenli alışverişin adresi carcur.com'a <br />aşağıdaki
+            iletişim adreslerinden kolayca ulaşabilirsiniz.
+          </p>
+        </div>
+
+        <div class="orta">
+          <h2 style="color: white">Kategoriler</h2>
+          <br /><br />
+          <a
+            onclick="getCategory('Beyaz Esya');"
+            style="color: rgb(155, 155, 155); cursor: pointer"
+            >BEYAZ EŞYA</a
+          >
+          <br />
+          <p style="color: rgb(155, 155, 155)">
+            -----------------------------------------------------------------
+            <br />
+            <a
+              onclick="getCategory('Bilgisayar Tablet');"
+              style="color: rgb(155, 155, 155); cursor: pointer"
+              >BİLGİSAYAR-TABLET</a
+            >
+            <br />
+          </p>
+
+          <p style="color: rgb(155, 155, 155)">
+            -----------------------------------------------------------------
+            <br />
+            <a
+              onclick="getCategory('Telefon');"
+              style="color: rgb(155, 155, 155); cursor: pointer"
+              >TELEFON</a
+            >
+            <br />
+          </p>
+
+          <p style="color: rgb(155, 155, 155)">
+            -----------------------------------------------------------------
+            <br />
+            <a
+              onclick="getCategory('Elektrikli Ev Aletleri');"
+              style="color: rgb(155, 155, 155); cursor: pointer"
+              >ELEKTRİKLİ EV ALETLERİ</a
+            >
+            <br />
+          </p>
+
+          <p style="color: rgb(155, 155, 155)">
+            -----------------------------------------------------------------
+          </p>
+        </div>
+
+        <div class="son">
+          <p style="color: rgb(155, 155, 155)">
+            "Müşteri Hizmetleri" servisimiz 7 gün, 24 saat gönderderdiğiniz
+            sorulara en hızlı şekilde yanıt verir.
+          </p>
+          <br />
+          <br />
+          <br />
+          <button class="iletisim" id="modal-ac">İletisim Bilgileri</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal">
+      <form>
+        <h3 id="modal-kapat">x</h3>
+        <img src="./img/iletisim.jpg" alt="" />
+        <a href="https://www.instagram.com/carcurshopping/?igshid=YmMyMTA2M2Y="
+          >İnstagram Sayfamız</a
+        >
+        <a href="https://www.facebook.com/profile.php?id=100081168500954"
+          >FaceBook Sayfamız</a
+        >
+      </form>
+    </div>
+  </body>
+
+  <script src="js/galeri.js"></script>
+  <script src="js/index.js"></script>
+</html>

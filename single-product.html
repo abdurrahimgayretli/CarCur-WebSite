@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Alışveriş Sitesi</title>
+    <link rel="stylesheet" href="css/indexstyle.css" />
+    <link rel="stylesheet" href="css/singleproduct.css" />
+  </head>
+  <body>
+    <section id="menu">
+      <div class="anamenu">
+        <div id="logo">
+          <a style="cursor: pointer" onclick="getIndex('index');">ÇarÇur</a>
+        </div>
+        <br />
+        <div class="nav" style="cursor: default">
+          <a style="cursor: pointer" onclick="getCategory('Beyaz Esya');"
+            >Beyaz Eşya</a
+          >
+          &emsp;
+          <a style="cursor: pointer" onclick="getCategory('Bilgisayar Tablet');"
+            >Bilgisayar-Tablet</a
+          >
+          &emsp;
+          <a style="cursor: pointer" onclick="getCategory('Telefon');"
+            >Telefon</a
+          >
+          &emsp;
+          <a
+            style="cursor: pointer"
+            onclick="getCategory('Elektrikli Ev Aletleri');"
+            >Elektrikli Ev Aletleri</a
+          >
+          &emsp; &emsp;
+          <a style="cursor: pointer" onclick="getCategory('galeri');">Galeri</a>
+        </div>
+      </div>
+      <a style="cursor: pointer" onclick="getIndex('cart')" class="sepet">
+        <h1>Sepet</h1>
+      </a>
+      <a style="cursor: pointer" class="cikisyap" id="logout" href="index.html">
+        <h1>Çıkış Yap</h1>
+      </a>
+      <div class="hesap" id="account"></div>
+    </section>
+
+    <div class="hosgeldiniz">
+      <div class="yazi">
+        <h1 style="color: white">Satın Al</h1>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="product-breadcroumb">
+            <a href="index.html" style="color: rgb(72, 162, 204)">Ana Sayfa</a>
+            &emsp;
+            <i>/</i>
+            &emsp;
+            <ins
+              onclick="getCategoryName('categoryName')"
+              style="color: rgb(72, 162, 204); cursor: pointer"
+              id="categoryName"
+            ></ins>
+            &emsp;
+            <i>/</i>
+            &emsp;
+            <a href="" style="color: rgb(72, 162, 204)" id="hProductName"></a>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="product-images">
+                <div class="product-main-img">
+                  <img src="" alt="" id="photo" name="photo" />
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="product-inner">
+                <h2
+                  class="product-name"
+                  id="productName"
+                  name="productName"
+                ></h2>
+                <br />
+                <div
+                  class="product-inner-price"
+                  style="font-size: large"
+                  id="price"
+                  name="price"
+                ></div>
+                <br />
+
+                <div class="cart">
+                  <button
+                    class="add_to_cart_button"
+                    type="submit"
+                    onclick="getProductCart()"
+                  >
+                    Sepete Ekle
+                  </button>
+                </div>
+                <br />
+                <div>
+                  <h2>Product Description</h2>
+                  <br />
+                  <p
+                    style="font-size: 150%"
+                    id="attribute"
+                    name="attribute"
+                  ></p>
+                </div>
+              </div>
+            </div>
+
+            <div id="baslik1">
+              <h1>Önerilen Ürünler</h1>
+            </div>
+            <br />
+
+            <div class="arkaplanitem1">
+              <div class="items" id="products1"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sayfasonu">
+      <div class="butun">
+        <div class="ilk">
+          <h2 style="color: rgb(42, 132, 173)"><span>ÇarÇur</span></h2>
+          <br />
+          <p style="color: rgb(155, 155, 155)">
+            İnternette güvenli alışverişin adresi carcur.com'a <br />aşağıdaki
+            iletişim adreslerinden kolayca ulaşabilirsiniz.
+          </p>
+        </div>
+
+        <div class="orta">
+          <h2 style="color: white">Kategoriler</h2>
+          <br /><br />
+          <a
+            onclick="getCategory('Beyaz Esya');"
+            style="color: rgb(155, 155, 155); cursor: pointer"
+            >BEYAZ EŞYA</a
+          >
+          <br />
+          <p style="color: rgb(155, 155, 155)">
+            -----------------------------------------------------------------
+            <br />
+            <a
+              onclick="getCategory('Bilgisayar Tablet');"
+              style="color: rgb(155, 155, 155); cursor: pointer"
+              >BİLGİSAYAR-TABLET</a
+            >
+            <br />
+          </p>
+
+          <p style="color: rgb(155, 155, 155)">
+            -----------------------------------------------------------------
+            <br />
+            <a
+              onclick="getCategory('Telefon');"
+              style="color: rgb(155, 155, 155); cursor: pointer"
+              >TELEFON</a
+            >
+            <br />
+          </p>
+
+          <p style="color: rgb(155, 155, 155)">
+            -----------------------------------------------------------------
+            <br />
+            <a
+              onclick="getCategory('Elektrikli Ev Aletleri');"
+              style="color: rgb(155, 155, 155); cursor: pointer"
+              >ELEKTRİKLİ EV ALETLERİ</a
+            >
+            <br />
+          </p>
+
+          <p style="color: rgb(155, 155, 155)">
+            -----------------------------------------------------------------
+          </p>
+        </div>
+
+        <div class="son">
+          <p style="color: rgb(155, 155, 155)">
+            "Müşteri Hizmetleri" servisimiz 7 gün, 24 saat gönderderdiğiniz
+            sorulara en hızlı şekilde yanıt verir.
+          </p>
+          <br />
+          <br />
+          <br />
+          <button class="iletisim" id="modal-ac">İletisim Bilgileri</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal">
+      <form>
+        <h3 id="modal-kapat">x</h3>
+        <img src="./img/iletisim.jpg" alt="" />
+        <a href="https://www.instagram.com/carcurshopping/?igshid=YmMyMTA2M2Y="
+          >İnstagram Sayfamız</a
+        >
+        <a href="https://www.facebook.com/profile.php?id=100081168500954"
+          >FaceBook Sayfamız</a
+        >
+      </form>
+    </div>
+  </body>
+  <script src="js/product.js"></script>
+  <script src="js/index.js"></script>
+</html>

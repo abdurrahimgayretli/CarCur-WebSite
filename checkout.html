@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ödeme</title>
+    <link rel="stylesheet" href="css/indexstyle.css" />
+    <link rel="stylesheet" href="css/checkout.css" />
+  </head>
+
+  <body>
+    <section id="menu">
+      <div class="anamenu">
+        <div id="logo">
+          <a style="cursor: pointer" onclick="getIndex('index');">ÇarÇur</a>
+        </div>
+        <br />
+        <div class="nav" style="cursor: default">
+          <a style="cursor: pointer" onclick="getCategory('Beyaz Esya');"
+            >Beyaz Eşya</a
+          >
+          &emsp;
+          <a style="cursor: pointer" onclick="getCategory('Bilgisayar Tablet');"
+            >Bilgisayar-Tablet</a
+          >
+          &emsp;
+          <a style="cursor: pointer" onclick="getCategory('Telefon');"
+            >Telefon</a
+          >
+          &emsp;
+          <a
+            style="cursor: pointer"
+            onclick="getCategory('Elektrikli Ev Aletleri');"
+            >Elektrikli Ev Aletleri</a
+          >
+          &emsp; &emsp;
+          <a style="cursor: pointer" onclick="getCategory('galeri');">Galeri</a>
+        </div>
+      </div>
+      <a style="cursor: pointer" class="cikisyap" id="logout" href="index.html">
+        <h1>Çıkış Yap</h1>
+      </a>
+      <div class="hesap" id="account"></div>
+    </section>
+
+    <div class="hosgeldiniz">
+      <div class="yazi">
+        <h1 style="color: white">Satın Al</h1>
+      </div>
+    </div>
+
+    <div class="kart">
+      <div class="checkout">
+        <h2>ADRES BİLGİLERİ</h2>
+
+        <form>
+          <div>
+            <p>Ad</p>
+            <input type="text" name="isim" id="isim" />
+          </div>
+
+          <div>
+            <p>Soyad</p>
+            <input type="text" name="soyisim" id="soyad" />
+          </div>
+
+          <div class="cift">
+            <p>Adres</p>
+            <input
+              type="text"
+              name="adres"
+              id="adres"
+              placeholder="Adres 1"
+            /><br />
+            <input type="text" name="adres2" placeholder="Adres 2" />
+          </div>
+
+          <div>
+            <p>İl</p>
+            <input type="text" name="il" placeholder="İl" />
+          </div>
+
+          <div>
+            <p>İlçe</p>
+            <input type="text" name="ilçe" placeholder="İlçe" />
+          </div>
+
+          <div>
+            <p>Posta Kodu</p>
+            <input type="text" name="postcode" placeholder="Posta Kodu" />
+          </div>
+
+          <div>
+            <p>Telefon Numarası</p>
+            <input type="text" name="phone" />
+          </div>
+        </form>
+      </div>
+
+      <div class="cartinfo">
+        <h2>KART BİLGİLERİ</h2>
+
+        <form>
+          <div>
+            <p>Kart Numarası</p>
+            <input
+              type="text"
+              name="Kart Numarası"
+              id="Kart"
+              placeholder="_ _ _ _   _ _ _ _   _ _ _ _   _ _ _ _"
+            />
+          </div>
+
+          <div>
+            <p>Kart Üzerindeki İsim</p>
+            <input type="text" name="soyisim" />
+          </div>
+
+          <div>
+            <p>Son Kullanma Tarihi</p>
+            <select class="combobox" name="skt" id="skt">
+              <option value="Ay">01</option>
+              <option value="Ay">02</option>
+              <option value="Ay">03</option>
+              <option value="Ay">04</option>
+              <option value="Ay">05</option>
+              <option value="Ay">06</option>
+              <option value="Ay">07</option>
+              <option value="Ay">08</option>
+              <option value="Ay">09</option>
+              <option value="Ay">10</option>
+              <option value="Ay">11</option>
+              <option value="Ay">12</option>
+            </select>
+
+            <select class="combobox" name="skt" id="skt">
+              <option value="Yıl">2019</option>
+              <option value="Yıl">2020</option>
+              <option value="Yıl">2021</option>
+              <option value="Yıl">2022</option>
+              <option value="Yıl">2023</option>
+              <option value="Yıl">2024</option>
+              <option value="Yıl">2025</option>
+              <option value="Yıl">2026</option>
+              <option value="Yıl">2027</option>
+              <option value="Yıl">2028</option>
+              <option value="Yıl">2030</option>
+              <option value="Yıl">2031</option>
+              <option value="Yıl">2032</option>
+              <option value="Yıl">2033</option>
+              <option value="Yıl">2034</option>
+            </select>
+          </div>
+
+          <div>
+            <p>Güvenlik Kodu</p>
+            <input type="text" name="cvv" />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div>
+      <div class="siparis">SEPET TOPLAMLARI</div>
+
+      <table class="alttablo">
+        <tr>
+          <th class="sepetalt">ÜRÜN</th>
+          <th class="fiyatalt1">TOPLAM</th>
+        </tr>
+        <tr></tr>
+
+        <tr>
+          <th class="sepetalt">SEPET ALT TOPLAMI</th>
+          <td class="fiyatalt" id="price"></td>
+        </tr>
+        <tr>
+          <th class="sepetalt">KARGO ÜCRETİ</th>
+          <td class="fiyatalt">ÜCRETSİZ KARGO</td>
+        </tr>
+        <tr>
+          <th class="sepetalt">SİPARİŞ TOPLAMI</th>
+          <td class="fiyatalt" id="subTotal">TOPLAM</td>
+        </tr>
+      </table>
+    </div>
+
+    <a onclick="getCheckOut()" style="cursor: pointer" class="link0">
+      <div class="link">SİPARİŞ VER</div>
+    </a>
+
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+    <div class="sayfasonu">
+      <div class="butun">
+        <div class="ilk">
+          <h2 style="color: rgb(42, 132, 173)"><span>ÇarÇur</span></h2>
+          <br />
+          <p style="color: rgb(155, 155, 155)">
+            İnternette güvenli alışverişin adresi carcur.com'a <br />aşağıdaki
+            iletişim adreslerinden kolYılca ulaşabilirsiniz.
+          </p>
+        </div>
+
+        <div class="orta">
+          <h2 style="color: white">Kategoriler</h2>
+          <br /><br />
+          <a
+            onclick="getCategory('Beyaz Esya');"
+            style="color: rgb(155, 155, 155); cursor: pointer"
+            >BEYAZ EŞYA</a
+          >
+          <br />
+          <p style="color: rgb(155, 155, 155)">
+            -----------------------------------------------------------------
+            <br />
+            <a
+              onclick="getCategory('Bilgisayar Tablet');"
+              style="color: rgb(155, 155, 155); cursor: pointer"
+              >BİLGİSAYAR-TABLET</a
+            >
+            <br />
+          </p>
+
+          <p style="color: rgb(155, 155, 155)">
+            -----------------------------------------------------------------
+            <br />
+            <a
+              onclick="getCategory('Telefon');"
+              style="color: rgb(155, 155, 155); cursor: pointer"
+              >TELEFON</a
+            >
+            <br />
+          </p>
+
+          <p style="color: rgb(155, 155, 155)">
+            -----------------------------------------------------------------
+            <br />
+            <a
+              onclick="getCategory('Elektrikli Ev Aletleri');"
+              style="color: rgb(155, 155, 155); cursor: pointer"
+              >ELEKTRİKLİ EV ALETLERİ</a
+            >
+            <br />
+          </p>
+
+          <p style="color: rgb(155, 155, 155)">
+            -----------------------------------------------------------------
+          </p>
+        </div>
+
+        <div class="son">
+          <p style="color: rgb(155, 155, 155)">
+            "Müşteri Hizmetleri" servisimiz 7 gün, 24 saat gönderderdiğiniz
+            sorulara en hızlı şekilde yanıt verir.
+          </p>
+          <br />
+          <br />
+          <br />
+          <button class="iletisim" id="modal-ac">İletisim Bilgileri</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal">
+      <form>
+        <h3 id="modal-kapat">x</h3>
+        <img src="./img/iletisim.jpg" alt="" />
+        <a href="https://www.instagram.com/carcurshopping/?igshid=YmMyMTA2M2Y="
+          >İnstagram Sayfamız</a
+        >
+        <a href="https://www.facebook.com/profile.php?id=100081168500954"
+          >FaceBook Sayfamız</a
+        >
+      </form>
+    </div>
+  </body>
+  <script src="js/checkout.js"></script>
+  <script src="js/index.js"></script>
+</html>

@@ -1,0 +1,232 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+table, th, td{
+    border-collapse:collapse;
+    margin-top: 70px;
+    margin-left: 350px;
+    height: 55px;
+}
+
+.class2 td{
+    height: 110px;
+}
+
+.class1{
+    border: solid 1px rgb(209, 209, 209);
+    background-color: rgb(235, 235, 235);
+}
+
+.bir{
+    border: solid 1px rgb(209, 209, 209);
+}
+
+.iki{
+    border: solid 1px rgb(209, 209, 209);
+}
+
+.urun1{
+    border: solid 1px rgb(209, 209, 209);
+    width: 277px;
+    height: 55px;
+}
+
+.fiyat1{
+    border: solid 1px rgb(209, 209, 209);
+    width: 201px;
+    height: 55px;
+}
+
+.miktar1{
+    border: solid 1px rgb(209, 209, 209);
+    width: 283px;
+    height: 55px;
+}
+
+.toplam1{
+    border: solid 1px rgb(209, 209, 209);
+    width: 210px;
+    height: 55px;
+}
+
+.bir0{
+    border: solid 1px rgb(209, 209, 209);
+    width: 94px;
+    text-align: center;
+}
+
+.iki0{
+    border: solid 1px rgb(209, 209, 209);
+    width: 94px;
+    text-align: center;
+}
+
+.urun0{
+    border: solid 1px rgb(209, 209, 209);
+    text-align: center;
+}
+
+.fiyat0{
+    border: solid 1px rgb(209, 209, 209);
+    text-align: center;
+}
+
+.miktar0{
+    border: solid 1px rgb(209, 209, 209);
+    text-align: center;
+}
+
+.toplam0{
+    border: solid 1px rgb(209, 209, 209);
+    text-align: center;
+}
+
+.class2{
+    border: solid 1px rgb(209, 209, 209);
+}
+
+.altkisim{
+    border: solid 1px rgb(209, 209, 209);
+    height: 55px;
+}
+
+.altkisim input[type="button"]{
+    width: 70px;
+    height: 25px;
+}
+
+.sepetbaslik{
+    margin-top: 100px;
+    margin-left: 1069px;
+    color: rgb(82, 128, 197);
+    font-size: 150%;
+}
+
+.alttablo{
+    border-collapse:collapse;
+    margin-top: 25px;
+    margin-left: 1069px;
+    font-size: 75%;
+}
+
+.sepetalt{
+    border: solid 1px rgb(209, 209, 209);
+    background-color: rgb(235, 235, 235);
+    height: 36px;
+    width: 280px;
+    text-align: left;
+    padding-left: 12px;
+}
+
+.fiyatalt{
+    border: solid 1px rgb(209, 209, 209);
+    height: 36px;
+    width: 180px;
+    text-align: left;
+    padding-left: 12px;
+}
+
+.miktar0 input[type="number"]{
+    width: 55px;
+    height: 40px;
+    padding-left: 8px;
+    border: solid 1px rgb(42, 132, 173);
+}
+
+.miktar0 input[type="button"]{
+    width: 25px;
+    height: 25px;
+    border: solid 1px rgb(42, 132, 173);
+    background-color: rgb(42, 132, 173);
+    color: white;
+}
+
+.tik{
+    font-size: 700%;
+    margin-top: 60px;
+    
+}
+
+.end{
+    margin-top: 105px;
+    
+    width: 700px;
+}
+
+.son1{
+    display: grid;
+    grid-template-columns: 110px 110px;
+}
+
+.end p{
+    font-size: 140%;
+}
+
+.end h3{
+    font-size: 270%;
+}
+
+.cizgi0{
+    width: 700px;
+    height: 2px;
+    background-color: black;
+    
+}
+
+.yazi0{
+    margin-top: 30px;
+    font-size: 140%;
+    font-weight: bold;
+}
+
+.cizgi1{
+    width: 700px;
+    height: 2px;
+    background-color: black;
+    margin-top: 30px;
+}
+
+.sepetkutusu{
+    width: 410px;
+    height: 370px;
+    margin-top: 80px;
+    background-color: rgb(209, 209, 209);
+
+}
+
+.aciklamakutusu{
+    width: 800px;
+    height: 500px;
+    margin-left: 240px;
+
+}
+
+.all{
+    display: grid;
+    grid-template-columns: 1300px 1300px;
+}
+
+.sepetkutusu p{
+    font-weight: bold;
+    font-size: 120%;
+    
+}
+
+.sepetkutusu h3{
+    font-size: 150%;
+}
+
+.cizgi2{
+    width: 350px;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 80px;
+}
+
+.ckutu{
+    margin: 30px;
+}

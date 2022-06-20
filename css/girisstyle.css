@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#container {
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+#clear {
+  clear: both;
+}
+#cont {
+  width: 100%;
+  height: 400px;
+  border: 2px solid #ffffff;
+}
+input {
+  display: block;
+  width: 270px;
+  margin: 10px 13px;
+  padding: 10px;
+  font-size: 1.3em;
+  color: rgba(11, 177, 224, 0.82);
+  outline: 2px solid #ffffff;
+}
+input[type="submit"] {
+  width: 270px;
+  color: #6e6e6e;
+}
+
+#login {
+  visibility: visible;
+  margin-top: -100px;
+
+  background: #ffffff;
+  padding: 20px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 0 1.2px;
+  width: 450px;
+  height: 450px;
+}
+
+#login h2 {
+  margin-top: 20px;
+  font-size: 40px;
+  color: black;
+  margin-bottom: 40px;
+}
+
+#login input {
+  position: relative;
+  top: -15px;
+  border: none;
+  background-color: #ececec;
+  outline: none;
+  margin: 5px;
+  padding: 10px;
+  width: 80%;
+  height: 35px;
+  border-radius: 5px;
+  transition: 0.2s linear;
+}
+
+#login input[type="text"],
+#login input[type="password"] {
+  border: solid 1.5px #acacac;
+}
+
+#login input[type="submit"] {
+  background: #ff5e00;
+  color: white;
+  box-sizing: border-box;
+  height: 50px;
+  width: 75%;
+  font-size: 100%;
+  font-weight: bold;
+}
+
+#login input[type="text"]:hover,
+#login input[type="password"]:hover {
+  border: solid 1.5px #6e6e6e;
+}
+
+#login input[type="submit"]:hover {
+  background: #ff711f;
+}
+
+#login h4[name="eposta"] {
+  position: relative;
+  top: -15px;
+  right: 135px;
+  color: #3a3a3a;
+}
+
+#login h4[name="parola"] {
+  position: relative;
+  top: -15px;
+  right: 147px;
+  color: #3a3a3a;
+}
+
+#login [onclick="regTabFun()"] {
+  position: relative;
+  top: -5px;
+  right: -125px;
+}
+
+.cizgi {
+  height: 2px;
+  width: 1235px;
+  background-color: black;
+}
+
+.bosluk {
+  height: 120px;
+}
+#register {
+  margin-top: -100px;
+
+  background: #ffffff;
+  padding: 20px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 0 1.2px;
+  width: 450px;
+  height: 450px;
+}
+
+#register h2 {
+  margin-top: 20px;
+  font-size: 40px;
+  color: black;
+  margin-bottom: 40px;
+}
+
+#register input {
+  position: relative;
+  top: -85px;
+  border: none;
+  background-color: #ececec;
+  outline: none;
+  margin: 5px;
+  padding: 10px;
+  width: 80%;
+  height: 35px;
+  border-radius: 5px;
+  transition: 0.2s linear;
+}
+
+#register input[type="text"],
+#register input[type="password"] {
+  border: solid 1.5px #acacac;
+}
+
+#register input[type="submit"] {
+  background: #ff5e00;
+  color: white;
+  box-sizing: border-box;
+  height: 50px;
+  width: 75%;
+  font-size: 100%;
+  font-weight: bold;
+}
+
+#register input[type="text"]:hover,
+#register input[type="password"]:hover {
+  border: solid 1.5px #6e6e6e;
+}
+
+#register input[type="submit"]:hover {
+  background: #ff711f;
+}
+
+#register h4[name="eposta"] {
+  position: relative;
+  top: -85px;
+  right: 135px;
+  color: #3a3a3a;
+}
+
+#register h4[name="parola"] {
+  position: relative;
+  top: -85px;
+  right: 147px;
+  color: #3a3a3a;
+}
+
+#register input[name="Ad"] {
+  position: relative;
+  top: -15px;
+  right: 90px;
+  width: 35%;
+}
+
+#register input[name="Soyad"] {
+  position: relative;
+  top: -79px;
+  right: -90px;
+  width: 35%;
+}
+
+#register h4[name="isim"] {
+  position: relative;
+  top: -16px;
+  right: 152px;
+  color: #3a3a3a;
+}
+
+#register h4[name="soy"] {
+  position: relative;
+  top: -81px;
+  right: -40px;
+  color: #3a3a3a;
+}
+
+#register [onclick="loginTabFun()"] {
+  cursor: pointer;
+  position: relative;
+  top: -75px;
+  right: -125px;
+}
+.comm {
+  position: absolute;
+  visibility: hidden;
+}
